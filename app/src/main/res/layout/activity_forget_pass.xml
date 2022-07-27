@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ForgetPassActivity"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter your registered mobile number "
+            android:textColor="#989D9E"
+            android:layout_gravity="left"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+
+
+
+
+
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Business Phone Number"
+            android:background="@drawable/rounded_edit_figma"
+            android:paddingLeft="20dp"
+            android:id="@+id/forgetoutletpass"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:textColorHint="#989D9E"
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Continue"
+            android:background="@drawable/rounded_button_figma"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+
+
+            android:id="@+id/conti"
+            android:textSize="22sp"/>
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

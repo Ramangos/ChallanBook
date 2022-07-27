@@ -1,0 +1,124 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+
+
+    >
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2,3,4"
+        >
+
+
+
+        <TableRow>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_column="1"
+                >
+
+
+                    <TextView
+                        android:id="@+id/product"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+
+
+                        android:text="Product Name"
+
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/sellprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/product"
+                        android:layout_marginTop="2dp"
+                        android:text="Sell price"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+
+                <TextView
+                    android:id="@+id/discount"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:gravity="center"
+                    android:text="10%"
+                    android:textColor="#808080"
+
+                    android:textSize="12sp" />
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/tax"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:gravity="center"
+                    android:text="Tax"
+                    android:textColor="#808080"
+                    android:textSize="12sp"
+
+
+                    />
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotocondensedregular"
+                    android:layout_column="4"
+                    android:text="Price"
+                    android:textColor="@color/black"
+                    android:gravity="right"
+
+                    />
+
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+
+
+
+
+
+</LinearLayout>

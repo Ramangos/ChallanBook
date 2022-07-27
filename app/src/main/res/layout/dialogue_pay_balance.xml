@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:background="@drawable/rounded_corner"
+>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:background="@drawable/rounded_corner_card"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+
+
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cust Name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/custname"
+                android:fontFamily="@font/robotocondensedregular"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cust Num"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/custnum"
+                android:layout_below="@+id/custname"
+                android:fontFamily="@font/robotocondensedregular"
+
+
+                />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invoice"
+                android:layout_marginTop="10dp"
+                android:id="@+id/invoice"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/color1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:id="@+id/datee"
+                android:layout_below="@+id/invoice"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#EFF3F6"
+            android:layout_below="@+id/custnum"
+
+            ></View>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+
+
+            >
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+
+                >
+
+                <EditText
+                    android:id="@+id/paymentreceived"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/pmspinn"
+                    android:visibility="gone"
+                    android:inputType="number"
+                    android:hint="Enter Amount"
+                    android:backgroundTint="@color/blue50"
+                    android:fontFamily="@font/robotocondensedregular"
+                    android:layout_alignBaseline="@+id/rtextview"
+                    >
+
+
+
+
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Method"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/robotocondensedregular"
+                    android:textStyle="bold"
+                    android:id="@+id/pmthod"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentTop="true"/>
+
+
+
+
+
+                <Spinner
+                    android:id="@+id/pmspinn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+
+
+
+                    ></Spinner>
+
+
+
+                <TextView
+                    android:id="@+id/rtextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/pmthod"
+                    android:layout_marginLeft="20dp"
+                    android:text="Payment Received "
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/robotocondensedregular"
+
+                    android:textStyle="bold" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/pmspinn"
+                    android:elevation="5dp"
+
+                    android:singleLine="true"
+                    android:id="@+id/pifchips"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignBaseline="@+id/rtextview"
+                    app:chipBackgroundColor="@color/color1"
+                    android:textColor="@color/white"
+
+                    android:textStyle="bold"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/robotocondensedregular"
+
+                    app:closeIconEnabled="true"
+                    app:closeIcon="@drawable/ic_baseline_close_24"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rtextview"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/rt2"
+                    android:text="Balance Amount"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/robotocondensedregular"
+
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/balanceamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:text="₹0"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_alignBaseline="@+id/rt2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Pay Balance"
+                android:textColor="@color/white"
+
+                android:layout_marginTop="20dp"
+
+                android:id="@+id/pymt"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/lightblue_button_background"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

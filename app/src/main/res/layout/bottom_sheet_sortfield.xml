@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner"
+    android:orientation="vertical"
+    >
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:background="#E8ECED"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        ></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/invoice"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="From Date" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_corner_for_button"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Select Date"
+                android:gravity="center"
+                android:fontFamily="@font/lato_medium"
+                android:textColor="@color/black_ninety"
+                android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+                android:id="@+id/fromdate"/>
+
+        </RelativeLayout>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/invoice"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="To Date" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_corner_for_button"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Select Date"
+                android:gravity="center"
+                android:fontFamily="@font/lato_medium"
+                android:textColor="@color/black_ninety"
+                android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+                android:id="@+id/todate"/>
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Search"
+            android:textColor="@color/white"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/getdata"
+            android:background="@drawable/lightblue_button_background"/>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <item  android:id="@+id/item1"
+        android:icon="@drawable/icons8_info_52px"
+        
+        android:title="More Info"/>
+
+    <item  android:id="@+id/item2"
+
+        android:title="Print Bill"/>
+
+
+
+
+    <item  android:id="@+id/editbill"
+
+        android:title="Edit Bill"/>
+
+
+    <item  android:id="@+id/deletebill"
+
+        android:title="Delete Bill"/>
+
+
+    <item  android:id="@+id/paybalance"
+
+        android:title="Pay Balance"/>
+
+
+    <item  android:id="@+id/call"
+
+        android:title="Call Customer"/>
+
+
+
+
+
+</menu>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:layout_centerHorizontal="true"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:elevation="10dp"
+
+
+
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icons8_empty_box_120px_1"
+                android:layout_marginTop="20dp"
+
+
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Empty Inventory!!"
+                android:textStyle="bold"
+                android:textColor="@color/gcolor1"
+                android:textSize="22sp"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/txt"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click below to add product in your inventory"
+                android:textStyle="bold"
+                android:textColor="@color/gcolor1"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="add"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:id="@+id/intenttoinvntry"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif-condensed"
+                android:background="@drawable/green_button_background"
+
+                android:layout_marginBottom="20dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

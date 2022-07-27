@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.challanbook">
+
+    <application xmlns:tools="http://schemas.android.com/tools"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ChallanBook"
+        tools:replace="android:theme">
+        <activity android:name=".OutletActivity"></activity>
+        <activity android:name=".ForgetPassActivity" />
+        <activity android:name=".SignupActivity"
+            android:windowSoftInputMode="adjustResize"
+            />
+        <activity android:name=".CompletedbillActivity" />
+        <activity android:name=".ProfitAndLossActivity" />
+        <activity android:name=".OtpActivity" />
+        <activity android:name=".MainActivity"
+            android:theme="@style/Theme.ChallanBook"
+            />
+        <activity android:name=".SplashActivity" />
+        <activity
+            android:name=".PaymentActivity"
+            android:theme="@style/Theme.ChallanBook"
+            tools:replace="android:theme" />
+        <activity android:name=".InventryActivity" />
+        <activity android:name=".SignInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/my_paths" />
+        </provider>
+    </application>
+    <queries>
+        <package android:name="com.whatsapp" />
+    </queries>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+</manifest>

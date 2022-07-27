@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item  android:id="@+id/printbill"
+
+        android:title="Print Bill"/>
+
+    <item  android:id="@+id/paybalance"
+
+    android:title="Pay Balance"/>
+
+</menu>

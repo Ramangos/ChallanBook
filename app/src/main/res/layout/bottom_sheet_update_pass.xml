@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_corner"
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="5dp"
+                android:background="#E8ECED"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                ></View>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Password"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#EFF3F6"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+
+                ></View>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    >
+
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:hint="Current password"
+                        android:background="@drawable/rounded_edit_figma"
+                        android:paddingLeft="20dp"
+                        android:id="@+id/edcurrpass"
+                        android:layout_marginTop="20dp"
+                        android:digits="qwertyuiopasdfghjklzxcvbnm 1234567890 QWERTYUIOPASDFGHJKLZXCVBNM !@#$%*"
+
+
+
+                        />
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:hint="New password"
+                        android:background="@drawable/rounded_edit_figma"
+                        android:paddingLeft="20dp"
+                        android:id="@+id/edpass"
+                        android:layout_marginTop="20dp"
+                        android:digits="qwertyuiopasdfghjklzxcvbnm 1234567890 QWERTYUIOPASDFGHJKLZXCVBNM !@#$%*"
+
+
+
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:hint="New password, again"
+                        android:background="@drawable/rounded_edit_figma"
+                        android:paddingLeft="20dp"
+                        android:id="@+id/edconfirmpass"
+                        android:layout_marginTop="20dp"
+                        android:digits="qwertyuiopasdfghjklzxcvbnm 1234567890 QWERTYUIOPASDFGHJKLZXCVBNM !@#$%*"
+
+
+
+                        />
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="save"
+                        android:background="@drawable/rounded_button_figma"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/savepass"
+                        android:textSize="22sp"/>
+
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+</ScrollView>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".SignupActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business Name"
+            android:textColor="#989D9E"
+            android:layout_marginTop="20dp"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Business Name"
+            android:background="@drawable/rounded_edit_figma"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:textColorHint="#989D9E"
+            android:id="@+id/outletname"
+            android:digits="qwertyuiopasdfghjklzxcvbnm 1234567890 QWERTYUIOPASDFGHJKLZXCVBNM !@#$%^*"
+
+
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business Address"
+            android:textColor="#989D9E"
+            android:layout_marginTop="20dp"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Business Address"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edit_figma"
+            android:paddingLeft="20dp"
+            android:id="@+id/outletadd"
+            android:textColorHint="#989D9E"
+            android:digits="qwertyuiopasdfghjklzxcvbnm 1234567890 QWERTYUIOPASDFGHJKLZXCVBNM /-\_"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business Phone Number*"
+            android:textColor="#989D9E"
+            android:layout_marginTop="20dp"
+
+            />
+
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Business Phone Number"
+
+                android:background="@drawable/rounded_edit_figma"
+                android:paddingLeft="20dp"
+                android:id="@+id/outlet"
+                android:layout_marginTop="8dp"
+                android:inputType="number"
+                android:text="7011493509"
+                android:textColorHint="#989D9E"
+
+                />
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password*"
+            android:textColor="#989D9E"
+            android:layout_marginTop="20dp"
+
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Password"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edit_figma"
+            android:paddingLeft="20dp"
+            android:id="@+id/outletpass"
+            android:text="1234"
+            android:textColorHint="#989D9E"
+            android:digits="qwertyuiopasdfghjklzxcvbnm 1234567890 QWERTYUIOPASDFGHJKLZXCVBNM !@#$%*"
+
+            />
+
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounded_button_figma"
+            android:text="Sign UP"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:id="@+id/signup"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

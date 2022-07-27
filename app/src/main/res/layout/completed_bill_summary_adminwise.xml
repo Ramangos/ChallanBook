@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color2"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/customtoolbar"
+        layout="@layout/toolbar"
+        android:orientation="vertical" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                android:background="@drawable/rounded_corner_card"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:paddingTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/Shopname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/customername"
+                            android:text="Rohit Telecom"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/robotocondensedregular"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New Chungi, Jajmau"
+                            android:id="@+id/Shopaddress"
+                            android:layout_below="@id/Shopname"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/black"
+
+                            />
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="988142186"
+                            android:id="@+id/Shopphone"
+                            android:layout_below="@id/Shopaddress"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="20dp"
+                            android:textColor="@color/black"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Invoice #"
+                            android:id="@+id/invoicenum"
+                            android:textColor="@color/color1"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="26/05/2021"
+
+                            android:id="@+id/billdate"
+                            android:layout_below="@id/invoicenum"
+                            android:layout_marginTop="5dp"
+
+                            android:textColor="@color/black"
+                            />
+
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Customer Name"
+
+                            android:id="@+id/customername"
+                            android:layout_below="@id/billdate"
+                            android:layout_marginTop="30dp"
+
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/robotocondensedregular"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Customer Num"
+
+                            android:id="@+id/customernum"
+                            android:layout_below="@id/customername"
+                            android:layout_marginTop="2dp"
+
+                            android:textColor="@color/black"
+                            />
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/customernum"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/red2"
+                            android:id="@+id/balancestatus_layout"
+                            android:padding="10dp"
+
+
+
+
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/red1"
+                                android:layout_centerInParent="true"
+                                android:text="Fully Paid"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:id="@+id/balancestatus"
+
+
+
+
+                                />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/circle"
+                            android:layout_below="@+id/customernum"
+                            android:layout_toRightOf="@+id/balancestatus_layout"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/calllayout"
+
+
+                            >
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/icons8_outgoing_call_48px"
+                                >
+
+
+                            </ImageView>
+
+
+                        </RelativeLayout>
+
+
+
+
+                    </RelativeLayout>
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:background="#EFF3F6"
+                        android:layout_marginTop="5dp"
+
+                        ></View>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Products (Purchase Price)"
+                            android:textColor="@color/color1"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/lato_medium"/>
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:background="#EFF3F6"
+                        android:layout_marginTop="10dp"
+
+                        ></View>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_medium"
+                                android:textColor="@color/black_ninety"
+                                android:layout_alignParentLeft="true"
+                                android:text="Product Name"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Product Purchase Price"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@font/lato_medium"
+                                android:gravity="right"
+                                android:textColor="@color/black_ninety"/>
+
+                        </RelativeLayout>
+
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/adminwise_purchase_rc">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:background="#EFF3F6"
+                        android:layout_marginTop="5dp"
+
+                        ></View>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Products (Sell Price)"
+                            android:textColor="@color/color1"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/lato_medium"/>
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:background="#EFF3F6"
+                        android:layout_marginTop="10dp"
+
+                        ></View>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp">
+
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:stretchColumns="1,2,3,4"
+                            >
+
+
+
+                            <TableRow>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/lato_medium"
+                                    android:textColor="@color/black_ninety"
+                                    android:layout_column="1"
+                                    android:text="Product Name"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/lato_medium"
+                                    android:textColor="@color/black_ninety"
+                                    android:gravity="center"
+                                    android:layout_column="2"
+                                    android:text="Discount"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/lato_medium"
+                                    android:textColor="@color/black_ninety"
+                                    android:layout_column="3"
+                                    android:gravity="center"
+                                    android:text="Tax"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Product Price"
+                                    android:layout_alignParentRight="true"
+                                    android:fontFamily="@font/lato_medium"
+                                    android:layout_column="4"
+                                    android:gravity="right"
+                                    android:textColor="@color/black_ninety"/>
+
+
+                            </TableRow>
+
+
+                        </TableLayout>
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/completedbillsummary_rc">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </LinearLayout>
+
+
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Details"
+                                android:textColor="@color/color1"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="@font/lato_medium"/>
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1.5dp"
+                            android:background="#EFF3F6"
+                            android:layout_marginTop="10dp"
+
+                            ></View>
+
+
+                        <RelativeLayout
+                            android:id="@+id/constraintLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="30dp"
+                            android:paddingBottom="30dp"
+                            >
+
+
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Product Total"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="20dp"
+                                android:fontFamily="@font/robotocondensedregular"
+
+                                />
+
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Discount"
+                                android:layout_below="@id/textView"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/robotocondensedregular"
+
+                                />
+
+
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tax"
+                                android:layout_below="@id/textView4"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="20dp"
+                                android:fontFamily="@font/robotocondensedregular"
+
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Grand Total"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:layout_below="@id/textView2"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="20dp"
+                                android:fontFamily="@font/robotocondensedregular"
+
+                                android:layout_marginTop="10dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <TextView
+                                android:id="@+id/productamtotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Product Total"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:fontFamily="@font/robotocondensedregular"
+
+                                android:layout_marginRight="20dp" />
+
+
+
+                            <TextView
+                                android:id="@+id/discounttotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Discount Total"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/productamtotal"
+                                android:gravity="right"
+                                android:layout_marginRight="20dp"
+                                android:fontFamily="@font/robotocondensedregular"
+
+                                android:layout_marginTop="10dp"/>
+
+
+                            <TextView
+                                android:id="@+id/taxtotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tax total"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/discounttotal"
+                                android:gravity="right"
+                                android:layout_marginRight="20dp"
+                                android:fontFamily="@font/robotocondensedregular"
+
+                                android:layout_marginTop="10dp"/>
+
+
+
+                            <TextView
+                                android:id="@+id/grandtotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="grand Total"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/taxtotal"
+                                android:gravity="right"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="10dp"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/robotocondensedregular"
+                                android:textColor="@color/black"
+                                />
+
+
+
+
+
+
+                        </RelativeLayout>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+
+                android:background="@drawable/rounded_corner_card"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Profit &amp; Loss"
+                            android:textColor="@color/color1"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/lato_medium"/>
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:background="#EFF3F6"
+                        android:layout_marginTop="5dp"
+
+                        ></View>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+
+
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sell Total"
+                            android:textColor="@color/black"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="20dp"
+
+                            android:fontFamily="@font/robotocondensedregular"
+                            android:layout_marginTop="10dp"/>
+
+
+                        <TextView
+                            android:id="@+id/selltotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sell Total"
+                            android:layout_alignParentRight="true"
+                            android:gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+
+                            android:fontFamily="@font/robotocondensedregular"
+                            android:textColor="@color/black"
+                            />
+
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Purchase Total"
+                            android:textColor="@color/black"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_below="@+id/selltotal"
+                            android:fontFamily="@font/robotocondensedregular"
+                            android:layout_marginTop="10dp"/>
+
+
+                        <TextView
+                            android:id="@+id/purchasetotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Purchase Total"
+                            android:layout_alignParentRight="true"
+                            android:gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/selltotal"
+                            android:fontFamily="@font/robotocondensedregular"
+                            android:textColor="@color/black"
+                            />
+
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Collection"
+                            android:textColor="@color/black"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_below="@+id/purchasetotal"
+                            android:fontFamily="@font/robotocondensedregular"
+                            android:layout_marginTop="10dp"/>
+
+
+
+                        <TextView
+                            android:id="@+id/paidamount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Paidamount"
+                            android:layout_alignParentRight="true"
+                            android:gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/purchasetotal"
+                            android:fontFamily="@font/robotocondensedregular"
+                            android:textColor="@color/black"
+                            />
+
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Balance amount"
+                            android:textColor="@color/black"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_below="@+id/paidamount"
+                            android:fontFamily="@font/robotocondensedregular"
+                            android:layout_marginTop="10dp"/>
+
+
+                        <TextView
+                            android:id="@+id/balanceamount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Paidamount"
+                            android:layout_alignParentRight="true"
+                            android:gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/paidamount"
+                            android:fontFamily="@font/robotocondensedregular"
+                            android:textColor="@color/black"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/profit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Profit"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/balanceamount"
+                            android:gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/robotocondensedregular"
+                            android:textColor="@color/black"
+                            />
+
+
+                        <com.google.android.material.chip.Chip
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:singleLine="true"
+                            app:chipBackgroundColor="@color/gcolor1"
+                            android:textColor="@color/white"
+                            android:text="Profit"
+                            android:fontFamily="@font/robotocondensedregular"
+                            android:layout_below="@+id/balanceamount"
+                            android:layout_toLeftOf="@id/profit"
+                            android:layout_marginRight="10dp"
+                            android:theme="@style/Theme.MaterialComponents.Light"
+
+
+                            />
+
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+
+
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corner_card"
+
+
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+
+
+            >
+
+
+                <TextView
+                    android:id="@+id/product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+
+                    android:scrollHorizontally="false"
+                    android:text="Product Name"
+                    android:fontFamily="@font/robotocondensedregular"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sellprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product"
+                android:layout_marginTop="5dp"
+                android:text="Sell price"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/sellprice"
+                android:background="@drawable/border_design"
+                android:padding="2dp"
+                android:text="Discount 10%"
+                android:textColor="#808080"
+                android:textSize="10dp" />
+
+
+                <TextView
+                    android:id="@+id/tax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sellprice"
+                    android:layout_marginTop="2dp"
+                    android:text="Tax"
+                    android:textColor="#808080"
+                    android:textSize="12sp"
+
+                    />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/robotocondensedregular"
+                android:text="Price"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+
+                />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/price"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+
+
+
+                >
+
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/numbr"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    app:textColor="@color/white"
+
+                    android:textSize="16sp"
+                    app:backGroundColor="#8D7FEC"
+
+
+
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
+
+
+

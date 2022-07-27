@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textColor="#989D9E"
+
+            />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/outletedit"
+        android:hint="Phone Number"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@drawable/border_design_for_edittext"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:textColorHint="#989D9E"
+
+
+        />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="#989D9E"
+            android:layout_marginTop="20dp"
+
+            />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Password"
+        android:id="@+id/passwordedit"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@drawable/border_design_for_edittext"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:textColorHint="#989D9E"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password? "
+            android:layout_gravity="right"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/color1"
+            android:paddingLeft="20dp"
+            android:id="@+id/fpass"
+
+
+
+            />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="login"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:id="@+id/loginbutton"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@drawable/green_button_background"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dont have an account? "
+            android:textSize="18dp"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signup"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/textviewsignup"
+            android:textSize="18dp"
+            android:textColor="@color/color1"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"/>
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        >
+
+        <TextView
+            android:id="@+id/purchaseproduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+
+            android:text="Product Name"
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/purchaseprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/purchaseproduct"
+            android:layout_marginTop="2dp"
+            android:text="Sell price"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tpurchaseprice"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotocondensedregular"
+        android:layout_column="4"
+        android:text="Price"
+        android:textColor="@color/black"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+
+        />
+
+
+
+</RelativeLayout>

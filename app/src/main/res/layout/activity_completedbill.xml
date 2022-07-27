@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompletedbillActivity"
+    android:background="@color/color2"
+    android:orientation="vertical"
+
+    >
+
+    <include
+        android:id="@+id/customtoolbar"
+        layout="@layout/toolbar"
+        android:orientation="vertical" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+
+
+            <EditText
+                android:id="@+id/completedbillsearcheditext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_corner_for_button"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/robotocondensedregular"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:hint="Search Product"
+                android:paddingLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/sortlayout"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="12dp"
+
+
+
+                />
+
+            <RelativeLayout
+                android:id="@+id/sortlayout"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/lightblue_button_background"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+
+
+
+
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/icons8_filter_24px"
+                    android:layout_centerInParent="true"
+                    android:padding="20dp"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today"
+                android:layout_below="@+id/completedbillsearcheditext"
+                android:layout_marginTop="10dp"
+                android:id="@+id/datetextview"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"></TextView>
+
+        </RelativeLayout>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/completedbillrc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="5dp"
+
+
+
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

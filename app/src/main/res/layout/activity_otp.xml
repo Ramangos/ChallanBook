@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpActivity"
+    android:background="@drawable/rounded_corner"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify Account"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#EFF3F6"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+
+        ></View>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We've sent a 6-digit code to "
+        android:textColor="#989D9E"
+        android:layout_gravity="left"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+
+
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+917860959600"
+        android:textColor="@color/black"
+        android:layout_gravity="left"
+        android:textSize="14sp"
+        android:id="@+id/numdisplay"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+
+
+
+        />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        >
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="OTP"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#989D9E"
+            android:background="@drawable/rounded_edit_figma"
+            android:id="@+id/otpedittext"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resend otp"
+                android:textColor="@color/color1"
+                android:id="@+id/resendotp"
+                android:visibility="gone"
+                android:paddingRight="10dp"
+                android:layout_centerVertical="true"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="--.--"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:id="@+id/timerr"
+                android:visibility="gone"
+
+
+
+
+
+                />
+
+
+
+
+            <ProgressBar
+                android:id="@+id/otpProgressBar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:indeterminateTint="@color/color1"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help ?"
+                android:textColor="@color/color1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/helplogin"
+                android:paddingLeft="10dp"
+
+
+                />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SUBMIT"
+            android:background="@drawable/rounded_button_figma"
+            android:textColor="@color/white"
+
+
+
+            android:id="@+id/submitotp"
+            android:textSize="22sp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use Another Number ?"
+
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:id="@+id/closebsheet"
+            android:enabled="false"
+
+            />
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
